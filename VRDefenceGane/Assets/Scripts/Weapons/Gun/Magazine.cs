@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Magazine : MonoBehaviour
+public class Magazine : MonoBehaviour, IReloadable
 {
     public UnityEvent<int> OnBulletsChanged;
     public UnityEvent<float> OnChargeChanged;
