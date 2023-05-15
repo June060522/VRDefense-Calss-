@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EventTest : MonoBehaviour
 {
-    public void OnFirstHoverEntered()
+   public void OnFirstHoverEntered()
     {
         Debug.Log($"{gameObject} - OnFirstHoverEntered");
     }
 
-    public void OnLastHoverExited()
+    public  void OnLastHoverExited()
     {
         Debug.Log($"{gameObject} - OnLastHoverExited");
     }
@@ -33,24 +33,22 @@ public class EventTest : MonoBehaviour
     {
         Debug.Log($"{gameObject} - OnLastSelectExited");
     }
-
     public void OnSelectEntered()
     {
         Debug.Log($"{gameObject} - OnSelectEntered");
     }
-
     public void OnSelectExited()
     {
         Debug.Log($"{gameObject} - OnSelectExited");
     }
 
-    public void OnActivate()
+    public void OnActivated()
     {
-        Debug.Log($"{gameObject} - OnActivate");
+        Debug.Log($"{gameObject} - OnActivated");
     }
-    
     public void OnDeactivated()
     {
         Debug.Log($"{gameObject} - OnDeactivated");
     }
+
 }
