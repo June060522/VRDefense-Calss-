@@ -36,6 +36,8 @@ public class ReturnToTarget : MonoBehaviour
             t = curve.Evaluate(t);
 
             transform.position = Vector3.Lerp(transform.position, target.position, t);
+
+            yield return null;
         }
 
         transform.position = target.position;
